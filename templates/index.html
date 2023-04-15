@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <title>
+        Bank Not Analysis
+    </title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+</head>
+
+<body>
+    <form action="/predict" method="post">
+        <div class="box">
+            <div class="result">
+                <h3>{{prediction}}</h3>
+            </div>
+            <div class="x">
+                <h1>Bank Note Analysis</h1>
+            </div>
+            <div class="y"><label for="">Variance</label><br><input class="input" type="text" name="variance"
+                    placeholder="Enter variance" required='required'></div>
+            <div class="y"><label for="">Skewness</label><br><input class="input" type="text" name="skewness"
+                    placeholder="Enter skewness" required='required'></div>
+            <div class="y"><label for="">Curtosis</label><br><input class="input" type="text" name="curtosis"
+                    placeholder="Enter curtosis" required='required'></div>
+            <div class="y"><label for="">Entropy</label><br><input class="input" type="text" name="entropy"
+                    placeholder="Enter entropy" required='required'></div>
+            <div class="button"><input class="btn" type="submit" name="variance" value="Predict"></div>
+            <span>Creator: SYED ALI TAQI</span>
+        </div>
+    </form>
+</body>
+
+</html>
